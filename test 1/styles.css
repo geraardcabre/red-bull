@@ -1,0 +1,122 @@
+html {
+    background-color: #001a30;
+    font-family: 'Futura PT', sans-serif;
+    .title {
+        font-size: 90px;
+        text-transform: uppercase;
+        color: #a8a9ac;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        @media (max-width: 992px) {
+            display: block;
+            font-size: 50px;
+        }
+
+    }
+    .year {
+        color: #ea1d2d;
+    }
+
+    .standing {
+        color: #fcd700;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%; 
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left; 
+        white-space: nowrap;
+
+        .driver-name {
+            display: flex;
+            gap: 10px;
+            img {
+                width: 20px;
+                height: auto;
+            }
+        }
+        
+    }
+
+    th {
+        background-color: #000B14;
+        color: #a8a9ac;
+        font-size: 18px;
+        min-width: 25%;
+    }
+
+    tr:hover{
+        opacity: .9;
+    }
+
+    tbody {
+        color: #a8a9ac;
+        font-size: 16px;
+
+        tr:nth-child(1) {
+            color: goldenrod;
+        }
+        tr:nth-child(2) {
+            color: silver;
+        }
+        tr:nth-child(3) {
+            color: #cd7f32
+        }
+
+        tr:nth-child(even) {
+            background-color: #002C52; 
+        }
+        tr:nth-child(odd) {
+            background-color: #01294c; 
+        }
+    }
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width:740px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width:1160px
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #00162b;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: hsla(0, 0%, 100%, .2);
+}

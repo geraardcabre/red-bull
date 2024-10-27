@@ -1,0 +1,88 @@
+body {
+  font-family: 'Futura PT', sans-serif;
+  margin: 0;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('../public/monaco-bg1.png') no-repeat center/cover;
+  color: #fff;
+  position: relative;
+}
+
+.foreground-car {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  @media (max-width: 992px) {
+    bottom: 0;
+    width: auto;
+  }
+}
+
+.hero-title-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 193px;
+  top: 180px;
+  left: 125px;
+  line-height: 150px;
+  font-weight: 800;
+  letter-spacing: -3px;
+
+  @media (max-width: 992px) {
+    font-size: 80px;
+    left: 20px;
+    line-height: 72px;
+  }
+}
+
+.hero-weekend-container {
+  position: absolute;
+  bottom: 93px;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 27px;
+  font-weight: 700;
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+}
+
+.hero-dates, .hero-country {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.gradient {
+  position: absolute;
+  bottom: -40px;
+  height: 175px;
+  width: 100%;
+  background: linear-gradient(to bottom, #00162B00, #00162B);
+  @media (max-width: 992px) {
+    bottom: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00162b;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: hsla(0, 0%, 100%, .2);
+}
